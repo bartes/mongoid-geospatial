@@ -6,7 +6,7 @@ module Mongoid
       attr_accessor :center, :radius
 
       def point
-        Point.new(self[0])
+        Point.new(*self[0])
       end
       alias_method :point, :center
 
