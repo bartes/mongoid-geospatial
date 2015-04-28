@@ -8,7 +8,8 @@ module Mongoid
       def point
         Point.new(*self[0])
       end
-      alias_method :point, :center
+      
+      alias_method :center, :point
 
       def radius
         self[1]
